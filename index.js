@@ -74,6 +74,7 @@ class Counter {
   //   }
   //   return this.count
   // }
+  //Refactored version after test passed
   countDown() {
     return this.count > 0 ? this.count-- : 0;
   }
@@ -186,7 +187,11 @@ class Car {
  * })
  */
 function isEvenNumberAsync(number) {
-  // ✨ implement
+  if (number % 2 === 0){
+    return true
+  } else {
+    return false
+  }
 }
 
 module.exports = {
